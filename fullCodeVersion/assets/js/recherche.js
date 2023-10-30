@@ -9,7 +9,6 @@ const rellax = new Rellax('.shape', {
     horizontal: false
   });
   breakpoints:[0, 0, 0]
-
 // Searching javascriptCode
 
 document.addEventListener("DOMContentLoaded", function() {

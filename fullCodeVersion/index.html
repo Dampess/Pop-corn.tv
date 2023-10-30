@@ -6,9 +6,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://unpkg.com/rellax@1.12.2/rellax.min.css"
-    />
-    <script src="https://unpkg.com/rellax@1.12.2/rellax.min.js"></script>
+      href="https://unpkg.com/rellax@1.12.2/rellax.min.css"/>
     <script src="assets/js/rellax.min.js"></script>
     <script src="assets/js/recherche.js"></script>
     <title>ECF Vidéotèque</title>
@@ -33,57 +31,64 @@
         </nav>
       </div>
     </header>
-    <!-- Accueil -->
-    <section class="parallax-section">
-      <article class="texth2">
-        <h2>Vous cherchez un film ?</h2>
-        <h2>Nous l'avons forcément !</h2>
-      </article>
-      <!-- Call to action -->
-      <article>
-        <a href="#">
-          <button class="btn-cta">Je cherche</button>
-        </a>
-      </article>
-      <!-- Parallax shapes -->
+    <main>
+      <!-- Accueil -->
+      <section>
+        <div class="parallax-section">
+          <article class="texth2 parallaxe-text">
+            <h2>Vous cherchez un film ?</h2>
+            <h2>Nous l'avons forcément !</h2>
+          </article>
+          <!-- Call to action -->
+          <article>
+            <a href="#rechercheForm">
+              <button class="btn-cta">Je cherche</button>
+            </a>
+          </article>
+        </div>
+
+        <!-- Parallax shapes -->
+      </section>
       <div class="parallax-shapes">
         <div class="shape circle-1" data-rellax-speed="7"></div>
         <div class="shape circle-2" data-rellax-speed="7"></div>
       </div>
-    </section>
-    <!-- Partie recherche -->
-    <section class="recherche">
-      <h2>Recherche de Films</h2>
-      <form id="rechercheForm">
-        <div>
+      <!-- Partie recherche -->
+      <section class="recherche">
+        <h2>Recherche de Films</h2>
+        <form id="rechercheForm">
           <div>
-            <input type="text" id="titre" placeholder="Titre" />
+            <div>
+              <input type="text" id="titre" placeholder="Titre" />
+            </div>
+            <div>
+              <input type="number" id="annee" placeholder="Année" />
+            </div>
+            <div>
+              <select id="type">
+                <option value="movie">Film</option>
+                <option value="episode">Épisode</option>
+                <option value="series">Série</option>
+                <option value="season">Saison</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit">Rechercher</button>
+            </div>
           </div>
-          <div>
-            <input type="number" id="annee" placeholder="Année" />
-          </div>
-          <div>
-            <select id="type">
-              <option value="movie">Film</option>
-              <option value="episode">Épisode</option>
-              <option value="series">Série</option>
-              <option value="season">Saison</option>
-            </select>
-          </div>
-          <div>
-            <button type="submit">Rechercher</button>
-          </div>
+        </form>
+        <!-- Affichage des résultats -->
+        <div id="resultats">
+          <!-- Les résultats de la recherche seront ajoutés ici avec JavaScript -->
         </div>
-      </form>
-      <!-- Affichage des résultats -->
-      <div id="resultats">
-        <!-- Les résultats de la recherche seront ajoutés ici avec JavaScript -->
-      </div>
-      <nav aria-label="Page navigation">
-        <ul class="pagination" id="pagination">
-          <!-- La pagination sera générée ici avec JavaScript -->
-        </ul>
-      </nav>
-    </section>
+        <nav aria-label="Page navigation">
+          <ul class="pagination" id="pagination">
+            <!-- La pagination sera générée ici avec JavaScript -->
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer>&copy; 2023 Votre Entreprise - Tous droits réservés</footer>
+    <script src="https://unpkg.com/rellax@1.12.2/rellax.min.js"></script>
   </body>
 </html>

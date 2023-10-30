@@ -167,7 +167,13 @@ div label {
     border-radius: 5px;
     font-family: poppins-regular;
 }
-
+/* footer */
+footer {
+  background-color: #f12d2d;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
 /* Média queris */
 
 @media screen and (max-width: 940px) {
