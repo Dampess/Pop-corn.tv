@@ -51,14 +51,168 @@ nav ul li {
 nav ul li:last-child {
     margin-right: 0; 
 }
-
 /* Style des liens */
 a {
-    text-decoration: none; 
-    color: beige; 
-}
-
-nav a:hover {
+    text-decoration: none;
+    color: beige;
+  }
+  
+  nav a:hover {
     text-decoration: underline;
     color: darkgray;
+  }
+  
+/* Style du conteneur principal */
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Style du titre "A voir ou à revoir" */
+section h1 {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style de l'en-tête du tableau */
+thead th {
+    background-color: #f12d2d;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style des cellules du tableau */
+td, th {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+/* Style du bouton "Ajouter un Film" */
+#ajouterFilmBtn {
+    background-color: #f12d2d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style du formulaire "Ajouter un Film" */
+#ajouterFilmForm {
+    display: none;
+}
+
+/* Style des éléments du formulaire */
+#ajouterFilmForm div {
+    margin-bottom: 10px;
+}
+
+/* Style des champs du formulaire */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style des messages d'erreur */
+small {
+    color: red;
+    font-size: 12px;
+}
+
+/* Style du bouton "Ajouter" dans le formulaire */
+#ajouterBtn {
+    background-color: #f12d2d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style de la section de filtrage */
+div label {
+    font-weight: bold;
+}
+
+/* Style du sélecteur de filtre */
+#filtre {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Média queris */
+
+@media screen and (max-width: 940px) {
+    /* Styles pour les tablettes (largeur maximale de 940px) */
+    header {
+      position: initial;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      width: 67%;
+    }
+    
+  
+    /* Styles spécifiques pour les tablettes (largeur maximale de 698px) */
+    @media screen and (max-width: 698px) {
+      nav {
+        width: 73%;
+      }
+      
+    }
+    /* Petites tablettes largeur max de 518px */
+    @media screen and (max-width: 518px) {
+      nav {
+        width: 80%;
+      }
+      .logo img {
+        max-width: 20%;
+      }
+      
+    }
+    /* Smartphones d'une largeur max de 424px */
+    @media screen and (max-width: 424px) {
+      nav {
+        width: 88%;
+      }
+      .logo img {
+        max-width: 35%;
+      }
+     
+    }
+    @media screen and (max-width: 424px) {
+      nav{
+          width: 100%;
+      }
+      
+    }
+  }
+  

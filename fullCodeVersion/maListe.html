@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/liste.css" />
+    <script src="assets/js/app.js"></script>
   </head>
   <body>
     <header>
@@ -25,6 +26,51 @@
         </nav>
       </div>
     </header>
-    
+    <main>
+      <section>
+    <div >
+      <h1 >A voir ou à revoir :</h1>
+      <table >
+          <thead>
+              <tr>
+                  <th>Titre</th>
+                  <th>Année</th>
+                  <th>Auteur</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody id="filmsTable">
+              <!-- Les films seront ajoutés ici avec JavaScript -->
+          </tbody>
+      </table>
+      <button id="ajouterFilmBtn" >Ajouter un Film</button>
+      <form id="ajouterFilmForm" style="display: none;">
+          <div >
+              <input type="text" id="titre" placeholder="Titre">
+              <small  id="erreurTitre"></small>
+          </div>
+          <div >
+              <input type="number" id="annee" placeholder="Année">
+              <small  id="erreurAnnee"></small>
+          </div>
+          <div>
+              <input type="text" id="auteur" placeholder="Auteur">
+              <small  id="erreurAuteur"></small>
+          </div>
+          <button type="button"  id="ajouterBtn">Ajouter</button>
+      </form>
+      <div >
+          <label for="filtre">Filtrer par :</label>
+          <select  id="filtre">
+              <option value="titre">Titre</option>
+              <option value="annee">Année</option>
+          </select>
+      </div>
+  </div>
+</section>
+</main>
+<footer>
+
+</footer>
   </body>
 </html>
