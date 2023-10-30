@@ -1,0 +1,64 @@
+@font-face {
+    font-family: poppins-light ;
+    src: url(../polices/Poppins/Poppins-Light.ttf);}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../polices/Poppins/Poppins-Regular.ttf);}
+
+/* Style du header */
+header {
+    background-color: #f12d2d; 
+    color: #fff; 
+    padding: 10px 0; 
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items:end;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    
+}
+
+.logo img {
+   max-width: 7%; 
+    height: auto; 
+    margin-right: 15px; 
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px; 
+}
+nav {
+    width: 30%;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+/* Style des liens */
+a {
+    text-decoration: none; 
+    color: beige; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: darkgray;
+}

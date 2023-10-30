@@ -1,3 +1,17 @@
+// Parallaxe with Rellax.js
+
+const rellax = new Rellax('.shape', {
+    speed: -2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+  breakpoints:[0, 0, 0]
+
+// Searching javascriptCode
+
 document.addEventListener("DOMContentLoaded", function() {
     // Fonction pour afficher les résultats de recherche
     function afficherResultats(resultats) {
@@ -10,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             div.innerHTML = `
                 <div class="card">
-                    <img src="${film.Poster !== "N/A" ? film.Poster : "https://placehold.co/200x400"}" class="card-img-top" alt="${film.Title}">
+                    <img src="${film.Poster !== "N/A" ? film.Poster : "https://placehold.co/200x300"}" class="card-img-top" alt="${film.Title}">
                     <div class="card-body">
                         <h5 class="card-title">${film.Title}</h5>
                         <p class="card-text">Année : ${film.Year}</p>
