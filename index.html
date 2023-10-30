@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECF Vidéotèque<</title>
+    <!-- Inclure Bootstrap pour les styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inclure Bootstrap et scripts JavaScript pour Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Inclure votre script JavaScript pour la recherche -->
+    <script src="assets/js/recherche.js"></script>
+</head>
+<body>
+    <header>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/Logo.jpg" alt="Logo" width="70" height="70" class="d-inline-block align-text-top rounded-circle">
+                    Pop-corn.TV
+                  </a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Recherche de Film</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="maListe.html">Ma liste</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+   
+
+   
+    <div class="container">
+        <h1 class="my-4">Recherche de Films</h1>
+        <form id="rechercheForm">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" id="titre" placeholder="Titre">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" id="annee" placeholder="Année">
+                </div>
+                <div class="col">
+                    <select class="form-control" id="type">
+                        <option value="movie">Film</option>
+                        <option value="episode">Épisode</option>
+                        <option value="series">Série</option>
+                        <option value="season">Saison</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                </div>
+            </div>
+        </form>
+        <div class="row" id="resultats">
+            <!-- Les résultats de la recherche seront ajoutés ici avec JavaScript -->
+        </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination" id="pagination">
+                <!-- La pagination sera générée ici avec JavaScript -->
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>
