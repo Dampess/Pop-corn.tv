@@ -35,6 +35,7 @@ header {
 
 .logo h1 {
     font-size: 24px; 
+    font-family: poppins-light;
 }
 nav {
     width: 30%;
@@ -46,6 +47,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 25px; 
+    font-family: poppins-regular;
 }
 
 nav ul li:last-child {
@@ -74,7 +76,7 @@ main {
 /* Style du titre "A voir ou à revoir" */
 section h1 {
     font-size: 24px;
-    font-family: Arial, sans-serif;
+    font-family: poppins-regular;
     margin-bottom: 20px;
 }
 
@@ -83,6 +85,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    font-family: poppins-regular;
 }
 
 /* Style de l'en-tête du tableau */
@@ -110,6 +113,7 @@ td, th {
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: poppins-light;
 }
 
 /* Style du formulaire "Ajouter un Film" */
@@ -146,11 +150,13 @@ small {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-family: poppins-light;
 }
 
 /* Style de la section de filtrage */
 div label {
     font-weight: bold;
+    font-family: poppins-regular;
 }
 
 /* Style du sélecteur de filtre */
@@ -159,6 +165,7 @@ div label {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: poppins-regular;
 }
 
 /* Média queris */

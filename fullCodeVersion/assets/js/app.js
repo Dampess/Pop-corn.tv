@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const films = []; // Tableau pour stocker les films
+    const films = [
+        
+    ]; // Tableau pour stocker les films
 
     // Fonction pour afficher les films dans le tableau
     function afficherFilms() {
