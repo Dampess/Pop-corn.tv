@@ -27,22 +27,10 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="table">
     <div >
       <h1 >A voir ou à revoir :</h1>
-      <table >
-          <thead>
-              <tr>
-                  <th>Titre</th>
-                  <th>Année</th>
-                  <th>Auteur</th>
-                  <th>Action</th>
-              </tr>
-          </thead>
-          <tbody id="filmsTable">
-              <!-- Les films seront ajoutés ici avec JavaScript -->
-          </tbody>
-      </table>
+      
       <button id="ajouterFilmBtn" >Ajouter un Film</button>
       <form id="ajouterFilmForm" style="display: none;">
           <div >
@@ -59,13 +47,26 @@
           </div>
           <button type="button"  id="ajouterBtn">Ajouter</button>
       </form>
-      <div >
+      <div style="margin-bottom: 5%;" >
           <label for="filtre">Filtrer par :</label>
           <select  id="filtre">
               <option value="titre">Titre</option>
               <option value="annee">Année</option>
           </select>
       </div>
+      <table >
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Année</th>
+                <th>Auteur</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="filmsTable">
+            <!-- Les films seront ajoutés ici avec JavaScript -->
+        </tbody>
+    </table>
   </div>
 </section>
 </main>
