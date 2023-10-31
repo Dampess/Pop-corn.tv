@@ -1,3 +1,4 @@
+/* Importation de polices */
 @font-face {
   font-family: poppins-light;
   src: url(../polices/Poppins/Poppins-Light.ttf);
@@ -6,6 +7,15 @@
 @font-face {
   font-family: poppins-regular;
   src: url(../polices/Poppins/Poppins-Regular.ttf);
+}
+/* Body */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #333;
+}
+main{
+  background-color: #333;
 }
 /* Style du header */
 header {
@@ -71,22 +81,23 @@ nav a:hover {
 /* Première section (image accueil) */
 
 .parallax-section {
-  min-height: 100dvh;
+  min-height: 100vh;
   background-image: url(../img/BGi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden;
 }
-.parallax-section .texth2 {
-  background-color: #ffffff55;
 
+.texth2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
   text-align: center;
-  padding: 1%;
-  margin-left: 0%;
-  margin-top: 12%;
+  padding: 2%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 15px;
 }
 .parallax-section h2 {
@@ -99,22 +110,15 @@ nav a:hover {
 }
 /* Call to action */
 .btn-cta {
-  background-color: #f12d2d;
+  position: absolute;
   text-align: center;
   padding: 1%;
-  margin-left: 45%;
-  margin-top: 5%;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: poppins-regular;
   font-size: 20px;
   border-radius: 15px;
-  border-color: #911b1b;
-}
-
-.btn-cta:hover {
-  background-color: #911b1b;
-  cursor: pointer;
-  color: beige;
-  font-size: 18px;
 }
 
 /* Parallaxe effect with Rellax.js */
@@ -130,7 +134,7 @@ nav a:hover {
 
 .shape {
   position: absolute;
-  background: #c8c9c9;
+  background: #e3e099;
   border-radius: 50%;
   z-index: 0;
 }
@@ -139,7 +143,7 @@ nav a:hover {
   width: 100px;
   height: 100px;
   top: 20%;
-  left: 20%;
+  left: 10%;
 }
 
 .circle-2 {
@@ -149,6 +153,18 @@ nav a:hover {
   left: 65%;
 }
 
+.circle-3 {
+  width: 90px;
+  height: 90px;
+  top: 50%;
+  left: 45%;
+}
+.circle-4 {
+  width: 40px;
+  height: 40px;
+  top: 100%;
+  left: 75%;
+}
 /* Style de la section recherche */
 .recherche {
   background-color: #f5f5f5;
@@ -216,8 +232,13 @@ button[type="submit"]:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 75%;
+  max-width: 80%;
+  padding: 5%;
+  border-radius: 15px;
   margin: auto;
+  background-color: burlywood;
+  font-family: poppins-regular;
+  margin-top: 2%;
 }
 
 /* Style de la pagination */
@@ -276,7 +297,6 @@ footer {
   }
   .parallax-section .texth2 {
     text-align: center;
-    margin-left: 30%;
   }
   .parallax-section h2 {
     font-size: 30px;
@@ -310,7 +330,6 @@ footer {
     }
     .parallax-section .texth2 {
       text-align: center;
-      margin-left: 25%;
     }
     .circle-1 {
       width: 100px;
@@ -336,7 +355,6 @@ footer {
     }
     .parallax-section .texth2 {
       text-align: center;
-      margin-left: 15%;
     }
     .circle-1 {
       width: 100px;
@@ -352,8 +370,7 @@ footer {
       left: 80%;
     }
     .btn-cta {
-      margin-left: 40%;
-      margin-top: 40%;
+      display: none;
     }
   }
   /* Smartphones d'une largeur max de 424px */
@@ -369,7 +386,6 @@ footer {
     }
     .parallax-section .texth2 {
       text-align: center;
-      margin-left: 6%;
     }
     .circle-1 {
       display: none;
@@ -378,9 +394,13 @@ footer {
     .circle-2 {
       display: none;
     }
-    .btn-cta {
+    .circle-3 {
       display: none;
     }
+    .circle-4 {
+      display: none;
+    }
+   
   }
   @media screen and (max-width: 424px) {
     nav {
@@ -389,9 +409,7 @@ footer {
     .parallax-section h2 {
       font-size: 20px;
     }
-    .parallax-section .texth2 {
-      margin-left: 8%;
-    }
+
     .parallax-section {
       min-height: 35dvh;
     }

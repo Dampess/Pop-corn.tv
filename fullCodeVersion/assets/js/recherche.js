@@ -1,14 +1,11 @@
 // Parallaxe with Rellax.js
-
-const rellax = new Rellax('.shape', {
-    speed: -2,
-    center: true,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false
+document.addEventListener("DOMContentLoaded", function () {
+    const rellax = new Rellax(".parallax-shapes .shape", {
+      center: true,
+    });
+  
+    // Vous pouvez ajuster les options de Rellax selon vos besoins
   });
-  breakpoints:[0, 0, 0]
 // Searching javascriptCode
 
 document.addEventListener("DOMContentLoaded", function() {

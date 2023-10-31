@@ -33,28 +33,27 @@
     </header>
     <main>
       <!-- Accueil -->
-      <section>
-        <div class="parallax-section">
-          <article class="texth2 parallaxe-text">
-            <h2>Vous cherchez un film ?</h2>
-            <h2>Nous l'avons forcément !</h2>
-          </article>
-          <!-- Call to action -->
-          <article>
-            <a href="#rechercheForm">
-              <button class="btn-cta">Je cherche</button>
-            </a>
-          </article>
+      <section class="parallax-section">
+        <article class="texth2 parallaxe-text">
+          <h2>Vous cherchez un film ?</h2>
+          <h2>Nous l'avons forcément !</h2>
+        </article>
+        <!-- Call to action -->
+        
+        <div class="parallax-shapes">
+          <div class="shape circle-1" data-rellax-speed="7"></div>
+          <div class="shape circle-2" data-rellax-speed="7"></div>
+          <div class="shape circle-3" data-rellax-speed="7"></div>
+          <div class="shape circle-4" data-rellax-speed="7"></div>
         </div>
-
-        <!-- Parallax shapes -->
       </section>
-      <div class="parallax-shapes">
-        <div class="shape circle-1" data-rellax-speed="7"></div>
-        <div class="shape circle-2" data-rellax-speed="7"></div>
-      </div>
+      <section>
+        <a href="#recherche">
+          <button class="btn-cta" type="submit">Je cherche</button>
+        </a>
+      </section>
       <!-- Partie recherche -->
-      <section class="recherche">
+      <section class="recherche" id="recherche">
         <h2>Recherche de Films</h2>
         <form id="rechercheForm">
           <div>
@@ -80,6 +79,7 @@
         <!-- Affichage des résultats -->
         <div id="resultats">
           <!-- Les résultats de la recherche seront ajoutés ici avec JavaScript -->
+          <small style="font-family: poppins-regular;margin-left: 40%;">Les films apparaitront ici</small>
         </div>
         <nav aria-label="Page navigation">
           <ul class="pagination" id="pagination">
