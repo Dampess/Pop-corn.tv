@@ -1,11 +1,12 @@
 // Parallaxe with Rellax.js
+
 document.addEventListener("DOMContentLoaded", function () {
     const rellax = new Rellax(".parallax-shapes .shape", {
       center: true,
     });
   
-    // Vous pouvez ajuster les options de Rellax selon vos besoins
   });
+
 // Searching javascriptCode
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Fonction pour gérer la soumission du formulaire de recherche
+
     function rechercherFilms(e) {
         e.preventDefault();
 
@@ -59,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Gérer la soumission du formulaire de recherche
+    
     const rechercheForm = document.getElementById("rechercheForm");
     rechercheForm.addEventListener("submit", rechercherFilms);
 });

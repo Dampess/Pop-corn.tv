@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const films = [
     {
@@ -23,12 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
   ]; // Tableau pour stocker les films
 
   // Fonction pour afficher les films dans le tableau
+
   function afficherFilms() {
     const filmsTable = document.getElementById("filmsTable");
-    filmsTable.innerHTML = ""; // Effacer le contenu existant
+    filmsTable.innerHTML = "";
     const filtre = document.getElementById("filtre").value;
 
     // Trier les films en fonction du filtre sélectionné
+
     if (filtre === "titre") {
       films.sort((a, b) => a.titre.localeCompare(b.titre));
     } else if (filtre === "annee") {
@@ -36,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Boucler à travers les films et les afficher
+
     films.forEach(function (film, index) {
       const row = document.createElement("tr");
       row.innerHTML = `
@@ -57,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Fonction pour valider les données du formulaire
+
   function validerFormulaire() {
     const titre = document.getElementById("titre").value;
     const annee = parseInt(document.getElementById("annee").value);
@@ -85,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Fonction pour ajouter un film
+
   function ajouterFilm() {
     const film = validerFormulaire();
     if (film) {
@@ -97,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Fonction pour supprimer un film
+
   function supprimerFilm(index) {
     if (confirm("Voulez-vous vraiment supprimer ce film ?")) {
       films.splice(index, 1);
@@ -105,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Gérer le clic sur le bouton "Ajouter"
+
   const ajouterFilmBtn = document.getElementById("ajouterFilmBtn");
   ajouterFilmBtn.addEventListener("click", function () {
     const ajouterFilmForm = document.getElementById("ajouterFilmForm");
@@ -112,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Gérer le clic sur le bouton "Ajouter" dans le formulaire
+   
   const ajouterBtn = document.getElementById("ajouterBtn");
   ajouterBtn.addEventListener("click", function () {
     ajouterFilm();
@@ -119,9 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Gérer le changement du filtre
+
   const filtre = document.getElementById("filtre");
   filtre.addEventListener("change", afficherFilms);
 
-  // Appel initial pour afficher les films
+  // Appel initial pour afficher les films 
+
   afficherFilms();
 });
