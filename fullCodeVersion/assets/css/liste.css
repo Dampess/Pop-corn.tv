@@ -46,6 +46,8 @@ nav {
 }
 nav ul {
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 nav ul li {
@@ -235,6 +237,9 @@ footer {
   @media screen and (max-width: 424px) {
     nav {
       width: 100%;
+    }
+    nav ul{
+      flex-wrap: wrap;
     }
   }
   @media screen and (max-width: 280px) {
