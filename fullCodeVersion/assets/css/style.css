@@ -84,16 +84,16 @@ nav a:hover {
 
 .parallax-section {
   min-height: 100vh;
-  background-image: url(../img/BGi.jpg);
+  background-image: url(../img/BGi2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  /* background-position: center; */
   background-attachment: fixed;
   position: relative;
 }
 
 .texth2 {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.263);
   position: absolute;
   text-align: center;
   padding: 2%;
@@ -173,7 +173,7 @@ nav a:hover {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-height: 80dvh;
+  min-height: 100dvh;
 }
 
 /* Style du titre "Recherche de Films" */
