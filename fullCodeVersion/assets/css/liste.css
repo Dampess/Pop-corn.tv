@@ -111,7 +111,15 @@ th {
   border: 1px solid #e0e0e0;
   padding: 10px;
 }
-
+/* Stule des messages Html */
+#message{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-family: poppins-light;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
 /* Style du bouton "Ajouter un Film" */
 #ajouterFilmBtn {
   background-color: #f12d2d;

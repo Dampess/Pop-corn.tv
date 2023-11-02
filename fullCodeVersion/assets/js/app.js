@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const films = [
     {
@@ -84,7 +83,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (erreurs === "") {
       return { titre: titre, annee: annee, auteur: auteur };
     } else {
-      alert("Erreur dans le formulaire : " + erreurs);
+      const messageElement = document.getElementById("message");
+      messageElement.style.display = "block";
+      messageElement.innerText = "Information manquante.";
+      ajouterFilmBtn.style.display = "Block";
+      document.getElementById("titre").value = "";
+      document.getElementById("annee").value = "";
+      document.getElementById("auteur").value = "";
+
+      setTimeout(function () {
+        messageElement.style.display = "none";
+        messageElement.innerText = "";
+      }, 5000);
       return null;
     }
   }
@@ -98,7 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
       film.auteur = film.auteur.charAt(0).toUpperCase() + film.auteur.slice(1);
       films.push(film);
       afficherFilms();
-      alert("Film ajouté avec succès.");
+      const messageElement = document.getElementById("message");
+      messageElement.style.display = "block";
+      messageElement.innerText = "Film ajouté avec succès.";
+      ajouterFilmBtn.style.display = "Block";
+      setTimeout(function () {
+        messageElement.style.display = "none";
+        messageElement.innerText = "";
+      }, 5000);
     }
   }
 
@@ -108,6 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (confirm("Voulez-vous vraiment supprimer ce film ?")) {
       films.splice(index, 1);
       afficherFilms();
+      const messageElement = document.getElementById("message");
+      messageElement.style.display = "block";
+      messageElement.innerText = "Film supprimé avec succès.";
+      setTimeout(function () {
+        messageElement.style.display = "none";
+        messageElement.innerText = "";
+      }, 5000);
     }
   }
 
@@ -115,12 +139,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const ajouterFilmBtn = document.getElementById("ajouterFilmBtn");
   ajouterFilmBtn.addEventListener("click", function () {
+    ajouterFilmBtn.style.display = "none";
     const ajouterFilmForm = document.getElementById("ajouterFilmForm");
     ajouterFilmForm.style.display = "block";
   });
 
   // Gérer le clic sur le bouton "Ajouter" dans le formulaire
-   
+
   const ajouterBtn = document.getElementById("ajouterBtn");
   ajouterBtn.addEventListener("click", function () {
     ajouterFilm();
@@ -132,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const filtre = document.getElementById("filtre");
   filtre.addEventListener("change", afficherFilms);
 
-  // Appel initial pour afficher les films 
+  // Appel initial pour afficher les films
 
   afficherFilms();
 });
