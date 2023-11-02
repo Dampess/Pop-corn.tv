@@ -183,6 +183,16 @@ nav a:hover {
   margin-bottom: 20px;
   text-align: center;
 }
+/* Style messages  */
+
+#message{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-family: poppins-light;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
 
 /* Style du formulaire */
 #rechercheForm {
@@ -249,10 +259,12 @@ button[type="submit"]:hover {
   flex-direction: row;
   list-style: none;
   justify-content: center;
+  
 }
 
 .pagination li {
   margin: 5px;
+  
 }
 
 .pagination a {
@@ -262,10 +274,27 @@ button[type="submit"]:hover {
   border-radius: 5px;
   text-decoration: none;
   color: #333;
+  
 }
 
 .pagination a:hover {
   background-color: #f5f5f5;
+}
+
+#prevPage, #nextPage{
+  background-color: #f12d2d;
+  margin: 2%;
+  color: white;
+  font-family: poppins-light;
+  padding: 1%;
+  border-radius: 10px;
+  border-color: #911b1b;
+}
+
+#prevPage:hover,#nextPage:hover{
+  background-color: #911b1b;
+  animation-duration: 0.5s ease all;
+  cursor: pointer;
 }
 /* footer */
 footer {
@@ -402,7 +431,9 @@ footer {
     .circle-4 {
       display: none;
     }
-   
+   .card-img-top{
+    width: 70%;
+   }
   }
   @media screen and (max-width: 424px) {
     nav {

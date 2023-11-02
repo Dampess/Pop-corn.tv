@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/rellax@1.12.2/rellax.min.css"/>
     <script src="assets/js/rellax.min.js"></script>
     <script src="assets/js/recherche.js"></script>
     <title>ECF Vidéotèque</title>
@@ -77,15 +73,17 @@
           </div>
         </form>
         <!-- Affichage des résultats -->
+        <div id="message">
+          <!-- Les messages s'afficheront ici -->
+        </div>
         <div id="resultats">
           <!-- Les résultats de la recherche seront ajoutés ici avec JavaScript -->
           <small style="font-family: poppins-regular;margin-left: 40%;">Les films apparaitront ici</small>
         </div>
-        <nav aria-label="Page navigation">
-          <ul class="pagination" id="pagination">
-            <!-- La pagination sera générée ici avec JavaScript -->
-          </ul>
-        </nav>
+        <div id="pagination" class="pagination">
+          <button id="prevPage">Précédent</button>
+          <button id="nextPage">Suivant</button>
+      </div>
       </section>
     </main>
     <footer>&copy; 2023 PoP-Corn.TV - Tous droits réservés</footer>
