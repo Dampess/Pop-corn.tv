@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         div.innerHTML = `
           <div class="card">
-            <img src="${film.Poster !== "N/A" ? film.Poster : "https://placehold.co/200x300"}" class="card-img-top" alt="${film.Title}">
+            <img src="${film.Poster !== "N/A" ? film.Poster : "https://placehold.co/200x300"}" class="card-img-top" alt="${film.Title}" style="max-width:200px; min-height:300px;">
             <div class="card-body">
               <h5 class="card-title">${film.Title}</h5>
               <p class="card-text">Année : ${film.Year}</p>
